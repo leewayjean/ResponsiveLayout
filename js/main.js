@@ -7,6 +7,8 @@ let playBtn = document.querySelector(".play_btn");
 // 视频标题
 let videoTitle = document.querySelector(".video").querySelector(".title");
 
+let backTop = document.querySelector(".backTop");
+console.log(backTop)
 
 
 // 往期回顾接口数据
@@ -32,15 +34,15 @@ for (let i = 0; i < reviewList.length; i++) {
         // 切换视频
         videoPlayer.src = videoList[i].src;
         videoTitle.innerText = videoList[i].title;
-            // 如果按钮隐藏了就显示出来
-            if(playBtn.style.display == "none"){
+        // 如果按钮隐藏了就显示出来
+        if (playBtn.style.display == "none") {
             playBtn.style.display = "block";
         }
 
     })
 }
 
-// 播放、暂停
+// 播放、暂停功能
 playBtn.addEventListener("click", () => {
     videoPlayer.play();
     playBtn.style.display = "none";
@@ -51,3 +53,37 @@ videoPlayer.addEventListener("click", () => {
         playBtn.style.display = "block";
     }
 })
+
+
+
+// 回到顶部功能
+// 监听屏幕滚动
+let screenHeight = window.screen.availHeight
+console.log(screenHeight);
+
+window.onscroll = () => {
+    //为了保证兼容性，这里取两个值，哪个有值取哪一个
+    //scrollTop就是触发滚轮事件时滚轮的高度
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    console.log("滚动距离" + scrollTop);
+    if(scrollTop > screenHeight){
+        backTop.style.display = "block";
+    }else {
+        backTop.style.display = "none";
+    }
+  }
+
+//   点击回到顶部
+let timer = null;
+backTop.onclick =  () => {
+    cancelAnimationFrame(timer);
+    timer = requestAnimationFrame(function fn() {
+        let oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (oTop > 0) {
+            document.body.scrollTop = document.documentElement.scrollTop = oTop - 80;
+            timer = requestAnimationFrame(fn);
+        } else {
+            cancelAnimationFrame(timer);
+        }
+    });
+}

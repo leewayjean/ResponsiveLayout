@@ -585,6 +585,7 @@ main .right_wrapper .intro_wrapper p {
  }
  main .right_wrapper .question_wrapper .votes .options_item {
      text-align: center;
+     cursor: pointer;
 
  }
  
@@ -703,6 +704,29 @@ main .right_wrapper .intro_wrapper p {
     line-height: 1.4em;
  }
 
+
+
+ /* backTop */
+
+ .backTop {
+     position: fixed;
+     right: 90px;
+     bottom: 120px;
+     width: 60px;
+     height: 60px;
+     display: none;
+     cursor: pointer;
+     transition: transform .4s ease;
+
+ }
+ .backTop img {
+     width: 100%;
+    transform: rotate(-19deg)
+ }
+
+ .backTop:hover {
+     transform: scale(1.2);
+ }
 
  
 
