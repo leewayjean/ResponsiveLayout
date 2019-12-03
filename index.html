@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- animate.css -->
+    <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <!-- 样式重置 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 大于768px -->
+    <link rel="stylesheet" media="(min-width:768px)" href="./css/desktop.css">
+    <!-- 小于768px -->
+    <link rel="stylesheet" media="(max-width:768px)" href="./css/mobile.css">
+</head>
+
+<body>
+    <!-- 容器 -->
+    <div class="wrapper">
+        <!-- 顶栏 -->
+        <header>
+            <!-- 用户信息 -->
+            <div class="user_info">
+                <img src="./img/avatar.png" alt="头像" class="avatar">
+                <a href="#" class="username">欢迎，木板 <span class="triangle"></span></a>
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <!-- 右边主内容区 -->
+            <section class="left_wrapper">
+                <!-- banner -->
+                <div class="banner">
+                    <!-- 涂鸦 -->
+                    <img src="./img/涂鸦.png" alt="" class="doodling animated  bounceIn">
+                    <!-- 钱 -->
+                    <img src="./img/钱.png" alt="" class="money animated  bounceIn">
+                    <!-- 建筑 -->
+                    <img src="./img/建筑.png" alt="" class="house animated  bounceIn">
+                    <!-- 标题 -->
+                    <img src="./img/标题.png" alt="" class="title animated  bounceInLeft slow">
+                    <!-- 火箭 -->
+                    <img src="./img/火箭.png" alt="" class="rocket animated  bounceIn">
+                    <!-- 小智 -->
+                    <img src="./img/小智.png" alt="" class="people animated  bounceInDown">
+                    <!-- 金字塔 -->
+                    <img src="./img/沙漠人.png" alt="" class="glod animated  bounceIn">
+                </div>
+                <!-- video -->
+                <section class="video">
+                    <h2 class="title">交易曦游记：记录真实交易员的人物纪实</h2>
+                    <!-- 播放器容器-->
+                    <div class="video_wrapper">
+                        <!-- 分享按钮 -->
+                        <div class="share">
+                            <img src="./img/分享.png" alt="">
+                            <span>分享</span>
+                        </div>
+                        <!-- 播放暂停按钮 -->
+                        <div class="play_btn">
+                            <img src="./img/Player.png" alt="">
+                        </div>
+                        <!-- 播放器 -->
+                        <video width="100%" height="100%" src="./video/AirPods.mp4">
+                        </video>
+                    </div>
+                </section>
+
+                <!-- 往期回顾 -->
+                <section class="review">
+                    <div class="review_header">
+                        <!-- 标题 -->
+                        <div class="title">
+                            <img src="./img/小标题装饰火箭.png" alt="火箭" class="icon_1">
+                            <h4 class="text">往期回顾</h4>
+                            <img src="./img/小标题右边.png" alt="" class="icon_2">
+                        </div>
+                        <!-- 更多 -->
+                        <a href="#" class="more">查看更多</a>
+
+                    </div>
+                    <!-- 往期回顾列表 -->
+                    <ul class="review_list">
+                        <li class="review_item">
+                            <img src="./img/list_1.png" alt="">
+                            <div class="info">
+                                <p class="title">八周交易计划2 《我的信仰》</p>
+                                <p class="date">2017-01-20</p>
+                            </div>
+                        </li>
+                        <li class="review_item">
+                            <img src="./img/list_2.png" alt="">
+                            <div class="info">
+                                <p class="title">八周交易计划2 《我的信仰》</p>
+                                <p class="date">2017-01-20</p>
+                            </div>
+                        </li>
+                        <li class="review_item">
+                            <img src="./img/list_3.png" alt="">
+                            <div class="info">
+                                <p class="title">八周交易计划2 《我的信仰》</p>
+                                <p class="date">2017-01-20</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <!-- 留言区 -->
+                <section class="message_boards">
+                    <!-- 标题 -->
+                    <div class="title">
+                        <img src="./img/小标题装饰火箭.png" alt="火箭" class="icon_1">
+                        <h4 class="text">留言板</h4>
+                        <img src="./img/小标题右边.png" alt="" class="icon_2">
+                    </div>
+                    <section class="problem">
+                        <!-- 问题 -->
+                        <div class="problem_wrapper"> <img src="./img/comment_icon.png" alt="" class="title_icon">
+                            <p class="problem_content">
+                                交易简单看来，不外乎上涨下跌，赌博不外乎输赢。很多人看来，这两者都是很大风险的，但实际交易的风险就不可控了吗？交易员和赌徒之间到底差别什么？作为交易员的你，又是怎样觉得呢?
+                            </p>
+                        </div>
+
+                        <!-- 链接条 -->
+                        <img src="./img/导言装饰(1).png" alt="" class="link_left">
+                        <img src="./img/导言装饰(1).png" alt="" class="link_right">
+                    </section>
+                    <!-- 评论区 -->
+                    <section class="content">
+                        <!-- 评论输入框 -->
+                        <section class="input_wrapper">
+                            <div class="left">
+                                <img src="./img/comment_icon2.png" alt="" class="icon">
+                                <span class="tips">评论需要登录，您还没有登录</span>
+                            </div>
+                            <div class="right">
+                                <span class="register_btn">注册</span>
+                                <span class="login_btn">登录</span>
+                            </div>
+                        </section>
+                        <!-- 最新评论分割线 -->
+                        <p class="split_line">
+                            <span class="line_left"></span>
+                            <span class="title">最新评论(149)</span>
+                            <span class="line_right"></span>
+                        </p>
+                        <!-- 评论列表 -->
+                        <ul class="comment_list">
+                            <li class="comment_item">
+                                <span class="order">
+                                    <img src="./img/tag.png" alt="">
+                                </span>
+                                <section class="item_wrapper">
+                                    <div class="item">
+                                        <img src="./img/user1.png" alt="" class="avatar">
+                                        <div>
+                                            <h4 class="username">扭转乾坤</h4>
+                                            <p><span class="site">温州</span><span class="date">10：06</span></p>
+                                        </div>
+                                    </div>
+                                    <p class="comment_content">大部分的赌徒都是赌久必输，而只有部分职业赌徒是赌久必赢的。可以说，赌久必输是生活中常见的现象</p>
+                                </section>
+                            </li>
+                            <li class="comment_item">
+                                    <span class="order">
+                                        <img src="./img/tag2.png" alt="">
+                                    </span>
+                                    <section class="item_wrapper">
+                                        <div class="item">
+                                            <img src="./img/user2.png" alt="" class="avatar">
+                                            <div>
+                                                <h4 class="username">扭转乾坤</h4>
+                                                <p><span class="site">温州</span><span class="date">10：06</span></p>
+                                            </div>
+                                        </div>
+                                        <p class="comment_content">大部分的赌徒都是赌久必输，而只有部分职业赌徒是赌久必赢的。可以说，赌久必输是生活中常见的现象</p>
+                                    </section>
+                                </li>
+                        </ul>
+
+                    </section>
+                </section>
+            </section>
+            <!-- 左边侧边栏 -->
+            <aside class="right_wrapper">
+                <!-- 标题交易人物介绍 -->
+                <span class="title">交易人物介绍</span>
+                <!-- 交易人物介绍 -->
+                <section class="intro_wrapper">
+                    <img src="./img/avatar2.png" alt="">
+                    <section>
+                        <p class="name">林则徐（1785年），福建
+                        </p>
+                        <p class="intro">清朝时期的政治家、思想家和诗人，因其主张严禁鸦片,在中国有“民族英雄”之誉</p>
+                    </section>
+                </section>
+                <!-- 标题 讨论问题 -->
+                <section class="question_wrapper">
+                    <span class="title question">本集讨论话题</span>
+                    <!-- 讨论题目 -->
+                    <p class="question">交易简单看来，不外乎上涨下跌，赌博不外乎输赢。交易员是赌徒吗？</p>
+                    <!-- 投票选项 -->
+                    <section class="votes">
+                        <section class="options_item">
+                            <div class="wrapper">
+                                <div class="item">
+                                    <img src="./img/左边.png" alt="">
+                                    <span class="btn">投票</span>
+                                </div>
+                                <span>我是选项1</span>
+                            </div>
+                            <figure class="count">已投1209票</figure>
+                        </section>
+                        <section class="options_item">
+                            <div class="wrapper">
+                                <div class="item">
+                                    <img src="./img/右边.png" alt="">
+                                    <span class="btn">投票</span>
+                                </div>
+                                <span class="options_title">我是选项1</span>
+                            </div>
+                            <figure class="count">已投1209票</figure>
+                        </section>
+                    </section>
+                </section>
+                <!-- 活动 -->
+                <section class="activity">
+                    <!-- 活动 -->
+                    <div class="bitmap">
+                        <img src="./img/Bitmap.png" alt="">
+                    </div>
+                    <h3>线下沙龙招募活动</h3>
+                    <p class="act_question">交易简单看来，不外乎上涨下跌，赌博不外乎输赢。交易员是赌徒吗？交易简单看来，不外乎上涨下跌，赌博不外乎输赢。交易员是赌徒吗？交易简单看来？</p>
+                    <span class="act_btn">活动详情</span>
+
+                </section>
+                <!-- 联系方式 -->
+                <section class="contact">
+                    <p class="welcome">加入我们《交易曦游记》大家庭吧！</p>
+                    <section class="contact_info">
+                        <img src="./img/二维码.png" alt="" class="QR_code">
+                        <section class="contact_way">
+                            <p class="name">交易曦游记
+                            </p>
+                            <p class="wechat"> 微信号：jin10_domi</p>
+                        </section>
+                    </section>
+                </section>
+            </aside>
+        </main>
+    </div>
+    <!-- js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
