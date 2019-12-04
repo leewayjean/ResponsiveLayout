@@ -68,8 +68,8 @@ main .left_wrapper {
 }
 
 main .right_wrapper {
-    position: sticky;
-    top: 0;
+    position: relative;
+    top: 35px;
     box-sizing: border-box;
     width: 360px;
     height: 932px;
@@ -618,6 +618,7 @@ main .right_wrapper .intro_wrapper p {
  }
  main .right_wrapper .question_wrapper .votes .options_item .wrapper .item {
      position: relative;
+     overflow: hidden;
  }
  main .right_wrapper .question_wrapper .votes .options_item .wrapper .item img {
      height: 74px;
@@ -702,6 +703,21 @@ main .right_wrapper .intro_wrapper p {
     font-family:MicrosoftYaHei;
     color:rgba(90,50,60,1);
     line-height: 1.4em;
+ }
+ /* 底部线条 */
+ main .right_wrapper .line {
+
+     position: absolute;
+     display: inline-block;
+     width: 370px;
+     height: 57px;
+     border-radius: 57px;
+     border: 2px solid rgba(180, 160, 160, 1);
+     bottom: 6px;
+     left: -9px;
+     border-top-color: transparent;
+     border-left-color: transparent;
+     border-right-color: transparent;
  }
 
 
