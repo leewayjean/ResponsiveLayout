@@ -15,7 +15,7 @@ console.log(backTop)
 let videoList = [
     {
         title: "八周交易计划2 《我的信仰》",
-        src: "./video/Macbook.mp4"
+        src: "./video/iPad.mp4"
     },
     {
         title: "第八集：巅峰之战！谁是黑马？",
