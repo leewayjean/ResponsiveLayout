@@ -19,7 +19,7 @@ let videoList = [
     },
     {
         title: "第八集：巅峰之战！谁是黑马？",
-        src: "./video/iPhone.mp4"
+        src: "./video/AirPods.mp4"
     },
     {
         title: "巨债承压动真格，赚钱才是真本事！",
