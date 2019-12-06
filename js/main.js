@@ -1,14 +1,14 @@
+
 // 获取往期回顾列表
-let reviewList = document.querySelectorAll(".review_item");
+let reviewList = document.querySelectorAll(".review-list__item");
 // 播放器
 let videoPlayer = document.querySelector("video");
 // 播放按钮
-let playBtn = document.querySelector(".play_btn");
+let playBtn = document.querySelector(".play-btn");
 // 视频标题
-let videoTitle = document.querySelector(".video").querySelector(".title");
+let videoTitle = document.querySelector(".video-wrapper").querySelector(".video-wrapper__title");
 
 let backTop = document.querySelector(".backTop");
-console.log(backTop)
 
 
 // 往期回顾接口数据
@@ -44,6 +44,7 @@ for (let i = 0; i < reviewList.length; i++) {
 
 // 播放、暂停功能
 playBtn.addEventListener("click", () => {
+    console.log(2)
     videoPlayer.play();
     playBtn.style.display = "none";
 })
