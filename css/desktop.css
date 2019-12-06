@@ -20,13 +20,14 @@ header {
     align-items: center;
 }
 
-header .user_info {
+/* 用户信息 */
+header .user-info {
     display: flex;
     align-items: center;
 }
 
 /* 用户头像 */
-header .user_info .avatar {
+ .user-info .avatar {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -34,7 +35,7 @@ header .user_info .avatar {
 }
 
 /* 用户名 */
-header .user_info .username {
+ .user-info .username {
     font-size: 14px;
     font-family: MicrosoftYaHei;
     color: rgba(90, 50, 60, 1);
@@ -45,7 +46,7 @@ header .user_info .username {
 }
 
 /* 三角形图标 */
-header .user_info .username .triangle {
+ .user-info .triangle {
     width: 0px;
     height: 0px;
     border-style: solid;
@@ -57,17 +58,17 @@ header .user_info .username .triangle {
 
 /* 中间内容区 */
 
-main {
+ main {
     display: flex;
     justify-content: space-between;
 }
 
-main .left_wrapper {
+ .left-wrapper {
     width: 1056px;
     height: 500px;
 }
 
-main .right_wrapper {
+ .right-wrapper {
     position: relative;
     top: 35px;
     box-sizing: border-box;
@@ -83,7 +84,7 @@ main .right_wrapper {
 /* 左边区域banner */
 
 
-main .left_wrapper .banner {
+ .left-wrapper .banner {
     position: relative;
     width: 978px;
     height: 278px;
@@ -94,7 +95,7 @@ main .left_wrapper .banner {
     margin-bottom: 46px;
 }
 /* 涂鸦背景 */
-main .left_wrapper .banner .doodling {
+.banner__doodling {
     position: absolute;
     left: 0;
     right: 0;
@@ -102,7 +103,7 @@ main .left_wrapper .banner .doodling {
     height: 278px;
 }
 /* 金钱 */
-main .left_wrapper .banner .money {
+.banner__money {
     position: absolute;
     width: 124px;
     height: 104px;
@@ -110,7 +111,7 @@ main .left_wrapper .banner .money {
     bottom: 38px;
 }
 /* 房子 */
-main .left_wrapper .banner .house {
+ .banner__house {
     position: absolute;
     width: 171px;
     height: 123px;
@@ -118,7 +119,7 @@ main .left_wrapper .banner .house {
     left: 70px;
 }
 /* 标题 */
-main .left_wrapper .banner .title {
+ .banner__title {
     width: 493px;
     height: 124px;
     position: absolute;
@@ -127,7 +128,7 @@ main .left_wrapper .banner .title {
     z-index: 999;
 }
 /* 火箭 */
-main .left_wrapper .banner  .rocket {
+  .banner__rocket {
     width: 44px;
     height: 76px;
     position: absolute;
@@ -135,7 +136,7 @@ main .left_wrapper .banner  .rocket {
     left: 552px;
 }
 /* 主持人 */
-main .left_wrapper .banner .people {
+ .banner__people {
     width: 232px;
     height: 282px;
     position: absolute;
@@ -144,7 +145,7 @@ main .left_wrapper .banner .people {
     z-index: 99;
 }
 /* 金字塔 */
-main .left_wrapper .banner .glod {
+ .banner__glod {
     width: 219px;
     height: 209px;
     position: absolute;
@@ -155,13 +156,13 @@ main .left_wrapper .banner .glod {
 
 /* 左边video */
 
-main .left_wrapper .video .title {
+ .left-wrapper .video-wrapper .video-wrapper__title {
     font-size: 24px;
     color: #5A323C;
     margin-bottom: 18px;
 }
 
-main .left_wrapper .video .video_wrapper {
+ .video-wrapper__video {
     position: relative;
     box-sizing: border-box;
     width: 1056px;
@@ -170,7 +171,7 @@ main .left_wrapper .video .video_wrapper {
     border: 10px solid rgba(198, 84, 76, 1);
 }
 /* 社交分享 */
-main .left_wrapper .video .video_wrapper .share {
+.video-wrapper__video .share {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -184,7 +185,7 @@ main .left_wrapper .video .video_wrapper .share {
     border-radius:12px 12px 0px 0px;
     z-index: 99;
 }
-main .left_wrapper .video .video_wrapper .share span {
+.video-wrapper__video .share .share-btn {
     font-size:14px;
     font-family:MicrosoftYaHei;
     color:rgba(240,225,225,1);
@@ -193,7 +194,7 @@ main .left_wrapper .video .video_wrapper .share span {
     margin-left: 6px;
 }
 /* 播放暂停按钮 */
-main .left_wrapper .video .video_wrapper .play_btn {
+.video-wrapper__video .play-btn {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -204,46 +205,46 @@ main .left_wrapper .video .video_wrapper .play_btn {
     cursor: pointer;
 }
 
-main .left_wrapper .video .video_wrapper .play_btn img {
+.video-wrapper__video .play-btn img {
     width: 100px;
     height: 100px;
     transition: transform .5s ease;
 }
-main .left_wrapper .video .video_wrapper .play_btn img:hover {
+.video-wrapper__video .play-btn img:hover {
     transform: scale(1.1);
 }
 
 
 /* 左边往期回顾 */
 
-main .left_wrapper .review {
+ .left-wrapper .review {
     margin-top: 40px;
     border-top: 1px solid rgba(217, 210, 210, 1);
 }
 
-main .left_wrapper .review .review_header {
+ .review .review-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 0;
 }
 
-main .left_wrapper .review .review_header .title {
+.review-header .title {
     display: flex;
     align-items: center;
 }
 
-main .left_wrapper .review .review_header .title .icon_1 {
+ .review-header .title .icon_1 {
     width: 22px;
     height: 22px;
 }
 
-main .left_wrapper .review .review_header .title .icon_2 {
+.review-header .title .icon_2 {
     width: 32px;
     height: 17px;
 }
 
-main .left_wrapper .review .review_header .title .text {
+ .review-header .title .text {
     font-size: 18px;
     font-family: Helvetica;
     color: rgba(90, 50, 60, 1);
@@ -251,7 +252,7 @@ main .left_wrapper .review .review_header .title .text {
     margin: 0 2px 0 9px;
 }
 
-main .left_wrapper .review .review_header .more {
+ .review-header .more {
     font-size: 14px;
     font-family: MicrosoftYaHei;
     color: rgba(180, 160, 160, 1);
@@ -263,12 +264,12 @@ main .left_wrapper .review .review_header .more {
 
 /* 往期回顾内容 */
 
-main .left_wrapper .review .review_list {
+ .review .review-list {
     display: flex;
     justify-content: space-between;
 }
 
-main .left_wrapper .review .review_list .review_item {
+  .review-list .review-list__item {
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -278,29 +279,29 @@ main .left_wrapper .review .review_list .review_item {
     transition: transform 1s cubic-bezier(0.21, 0.94, 0.57, 1.49);
 }
 /* 动画 */
-main .left_wrapper .review .review_list .review_item:hover {
+ .review-list__item:hover {
     box-shadow: 5px 6px 20px 0px #d9d2d2;
     transform: scale(1.05);
 }
 
-main .left_wrapper .review .review_list .review_item img {
+ .review-list__item img {
     width: 336px;
     height: 189px;
 }
 
-main .left_wrapper .review .review_list .review_item .info {
+ .review-list__item .info {
     flex: 1;
     background: #fff;
     padding-left: 18px;
 }
 
-main .left_wrapper .review .review_list .review_item .title {
+ .review-list__item .title {
     font-size: 16px;
     color: #5A323C;
     margin-top: 6px;
 }
 
-main .left_wrapper .review .review_list .review_item .date {
+ .review-list__item .date {
     font-size: 14px;
     color: #5A323C;
     margin-top: 5px;
@@ -309,28 +310,28 @@ main .left_wrapper .review .review_list .review_item .date {
 
 /* 留言区 */
 
-main .left_wrapper .message_boards {
+ .left-wrapper .message-boards {
     margin-top: 40px;
     border-top: 1px solid rgba(217, 210, 210, 1);
 }
 
-main .left_wrapper .message_boards .title {
+ .message-boards .title {
     display: flex;
     align-items: center;
     padding: 18px 0;
 }
 
-main .left_wrapper .message_boards .title .icon_1 {
+ .message-boards .title .icon_1 {
     width: 22px;
     height: 22px;
 }
 
-main .left_wrapper .message_boards .title .icon_2 {
+ .message-boards .title .icon_2 {
     width: 32px;
     height: 17px;
 }
 
-main .left_wrapper .message_boards .title .text {
+ .message-boards .title .text {
     font-size: 18px;
     font-family: Helvetica;
     color: rgba(90, 50, 60, 1);
@@ -341,7 +342,7 @@ main .left_wrapper .message_boards .title .text {
 
 /* 讨论问题 */
 
-main .left_wrapper .message_boards .problem {
+ .message-boards .problem {
     box-sizing: border-box;
     position: relative;
     width: 1056px;
@@ -353,19 +354,19 @@ main .left_wrapper .message_boards .problem {
     padding: 30px 105px;
 }
 
-main .left_wrapper .message_boards .problem .problem_wrapper {
+ .problem .problem-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main .left_wrapper .message_boards .problem .title_icon {
+ .problem .title-icon {
     width: 32px;
     height: 32px;
     margin-right: 36px;
 }
 
-main .left_wrapper .message_boards .problem .problem_content {
+ .problem .problem-content {
     font-size: 14px;
     font-family: MicrosoftYaHei;
     color: rgba(90, 50, 60, 1);
@@ -373,13 +374,14 @@ main .left_wrapper .message_boards .problem .problem_content {
     letter-spacing: 1px;
 }
 
-main .left_wrapper .message_boards .problem .link_left {
+/* 连接条 */
+ .problem .link-left {
     position: absolute;
     left: 80px;
     top: 85px;
 }
 
-main .left_wrapper .message_boards .problem .link_right {
+ .problem .link-right {
     position: absolute;
     right: 80px;
     top: 85px;
@@ -388,7 +390,7 @@ main .left_wrapper .message_boards .problem .link_right {
 
 /* 评论区 */
 
-main .left_wrapper .message_boards .content {
+ .message-boards .content {
     box-sizing: border-box;
     width: 1056px;
     height: 793px;
@@ -399,7 +401,7 @@ main .left_wrapper .message_boards .content {
     padding: 56px 36px;
 }
 
-main .left_wrapper .message_boards .content .input_wrapper {
+ .content .input_wrapper {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -410,13 +412,13 @@ main .left_wrapper .message_boards .content .input_wrapper {
     border: 2px solid rgba(180, 160, 160, 1);
 }
 
-main .left_wrapper .message_boards .content .input_wrapper .icon {
+ .content .input_wrapper .icon {
     width: 19px;
     height: 15px;
     margin-right: 25px;
 }
 
-main .left_wrapper .message_boards .content .input_wrapper .tips {
+ .input_wrapper .tips {
     font-size: 14px;
     font-family: MicrosoftYaHei;
     color: rgba(180, 160, 160, 1);
@@ -424,7 +426,7 @@ main .left_wrapper .message_boards .content .input_wrapper .tips {
     letter-spacing: 1px;
 }
 
-main .left_wrapper .message_boards .content .input_wrapper .right span {
+ .input_wrapper .right span {
     font-size: 14px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
@@ -439,13 +441,13 @@ main .left_wrapper .message_boards .content .input_wrapper .right span {
     cursor: pointer;
 }
 
-main .left_wrapper .message_boards .content .input_wrapper .right .register_btn {
+ .input_wrapper .right .register_btn {
     color: rgba(180, 160, 160, 1);
     border: 1px solid rgba(180, 160, 160, 1);
     letter-spacing: 1px;
 }
 
-main .left_wrapper .message_boards .content .input_wrapper .right .login_btn {
+ .input_wrapper .right .login_btn {
     color: rgba(255, 255, 255, 1);
     background: rgba(198, 84, 76, 1);
 }
@@ -454,7 +456,7 @@ main .left_wrapper .message_boards .content .input_wrapper .right .login_btn {
 
 /* 评论分割线 */
 
-main .left_wrapper .message_boards .content .split_line {
+ .content .split_line {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -462,42 +464,42 @@ main .left_wrapper .message_boards .content .split_line {
     margin-top: 54px;
 }
 
-main .left_wrapper .message_boards .content .split_line .line_left {
+ .content .split_line .line_left {
     flex: 1;
     height: 1px;
     background: rgba(217, 210, 210, 1);
 }
 
-main .left_wrapper .message_boards .content .split_line .title {
+ .content .split_line .title {
     margin: 0 18px;
     color: rgba(180, 160, 160, 1);
 }
 
-main .left_wrapper .message_boards .content .split_line .line_right {
+ .content .split_line .line_right {
     flex: 1;
     height: 1px;
     background: rgba(217, 210, 210, 1);
 }
 
-/* 评论列表 */
-main .left_wrapper .message_boards .content .comment_list .comment_item{
+/* 评论列表项 */
+ .comment_item{
     position: relative;
     display: flex;
     margin: 24px 0 55px 0;
 }
-main .left_wrapper .message_boards .content .comment_list .comment_item .order {
+ .comment_item .order {
     margin-right: 36px;
 }
-main .left_wrapper .message_boards .content .comment_list .comment_item .order img {
+ .comment_item .order img {
     width: 40px;
     height: 43px;
 }
-main .left_wrapper .message_boards .content .comment_list .comment_item .item_wrapper {
+ .comment_item .item_wrapper {
     flex: 1;
     padding: 0 0 55px 0;
     border-bottom: 1px solid #D9D2D2;
 }
-main .left_wrapper .message_boards .content .comment_list .comment_item .item_wrapper
+ .comment_item .item_wrapper
 .comment_content {
     font-size:14px;
     margin-top: 19px;
@@ -505,30 +507,30 @@ main .left_wrapper .message_boards .content .comment_list .comment_item .item_wr
     color:rgba(90,50,60,1);
 }
 
-main .left_wrapper .message_boards .content .comment_list .comment_item .item {
+ .comment_item .item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-main .left_wrapper .message_boards .content .comment_list .comment_item .item .avatar {
+ .comment_item .item .avatar {
     width: 56px;
     height: 56px;
     border-radius: 50%;
     margin-right: 12px;
 }
-main .left_wrapper .message_boards .content .comment_list .comment_item .item  .username {
+ .comment_item .item  .username {
     font-size:18px;
     font-family:Helvetica;
     color:rgba(90,50,60,1);
 }
-main .left_wrapper .message_boards .content .comment_list .comment_item .item  p{
+ .comment_item .item  p{
     font-size:14px;
     font-family:MicrosoftYaHei;
     color:rgba(180,160,160,1);
 }
 /* 回复按钮 */
-main .left_wrapper .message_boards .content .comment_list .comment_item .reply_btn {
+ .comment_item .reply_btn {
     display: flex;
     align-items: center;
     position: absolute;
@@ -538,7 +540,7 @@ main .left_wrapper .message_boards .content .comment_list .comment_item .reply_b
     color:rgba(180,160,160,1);
     letter-spacing:1px;
 }
-main .left_wrapper .message_boards .content .comment_list .comment_item .reply_btn img {
+ .comment_item .reply_btn img {
     width: 15px;
     margin-right: 4px;
 }
@@ -546,7 +548,7 @@ main .left_wrapper .message_boards .content .comment_list .comment_item .reply_b
 /* 侧边栏 */
 
 
-main .right_wrapper .title {
+ .right-wrapper .title {
     position: absolute;
     left: 50%;
     top: 0;
@@ -564,15 +566,15 @@ main .right_wrapper .title {
     text-align: center;
     line-height: 36px;
 }
-main .right_wrapper .intro_wrapper {
+ .right-wrapper .intro_wrapper {
     display: flex;
     justify-content: space-between;
     margin:39px 0 53px 0;
 }
-main .right_wrapper .intro_wrapper img {
+ .right-wrapper .intro_wrapper img {
     margin-right: 24px;
 }
-main .right_wrapper .intro_wrapper p {
+ .right-wrapper .intro_wrapper p {
     font-size:14px;
     font-family:Helvetica;
     color:rgba(90,50,60,1);
@@ -580,10 +582,9 @@ main .right_wrapper .intro_wrapper p {
     letter-spacing:1px;
  }
  /* 讨论问题 */
- main .right_wrapper .question_wrapper .title.question {
-     position: relative;
- }
- main .right_wrapper .question_wrapper .title.question {
+
+  .right-wrapper .question_wrapper .title.question {
+    position: relative;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -595,19 +596,19 @@ main .right_wrapper .intro_wrapper p {
  }
 
  /* 投票 */
- main .right_wrapper .question_wrapper .votes {
+  .right-wrapper .question_wrapper .votes {
      display: flex;
      justify-content: space-between;
      margin-top: 22px;
  }
- main .right_wrapper .question_wrapper .votes .options_item {
+ .question_wrapper .votes .options_item {
      text-align: center;
      cursor: pointer;
 
  }
  
  /* 投票数 */
- main .right_wrapper .question_wrapper .votes .options_item .count {
+.options_item .count {
      margin-top: 12px;
      font-size:14px;
     font-family:Helvetica;
@@ -616,7 +617,7 @@ main .right_wrapper .intro_wrapper p {
     letter-spacing:1px;
  }
 
- main .right_wrapper .question_wrapper .votes .options_item .wrapper {
+.options_item .wrapper {
     width:140px;
     height:110px;
     background:rgba(255,255,255,1);
@@ -626,21 +627,21 @@ main .right_wrapper .intro_wrapper p {
     box-sizing: border-box;
     padding: 7px;
  }
- main .right_wrapper .question_wrapper .votes .options_item .wrapper .options_title {
+.options_item .wrapper .options_title {
     font-size:14px;
     font-family:Helvetica;
     color:rgba(90,50,60,1);
     line-height:17px;
     letter-spacing:1px;
  }
- main .right_wrapper .question_wrapper .votes .options_item .wrapper .item {
+.options_item .wrapper .item {
      position: relative;
      overflow: hidden;
  }
- main .right_wrapper .question_wrapper .votes .options_item .wrapper .item img {
+.options_item .wrapper .item img {
      height: 74px;
  }
- main .right_wrapper .question_wrapper .votes .options_item .wrapper .item .btn {
+.options_item .wrapper .item .btn {
      position: absolute;
      top: 50%;
      left: 50%;
@@ -653,13 +654,13 @@ main .right_wrapper .intro_wrapper p {
  }
 
  /* 活动栏 */
- main .right_wrapper .activity .bitmap {
+  .right-wrapper .activity .bitmap {
      width: 312px;
      height: 59px;
      border: 1px dotted #333;
      margin: 45px 0 42px 0;
  }
- main .right_wrapper .activity h3 {
+  .right-wrapper .activity h3 {
     width:269px;
     height:36px;
     text-align: center;
@@ -673,7 +674,7 @@ main .right_wrapper .intro_wrapper p {
     color:rgba(198,84,76,1);
     letter-spacing:1px;
  }
- main .right_wrapper .activity .act_question {
+  .right-wrapper .activity .act_question {
     font-size:14px;
     font-family:MicrosoftYaHei;
     color:rgba(90,50,60,1);
@@ -681,7 +682,7 @@ main .right_wrapper .intro_wrapper p {
     letter-spacing:1px;
     margin: 15px 0 20px 0;
  }
- main .right_wrapper .activity .act_btn {
+  .right-wrapper .activity .act_btn {
      display: inline-block;
      margin: 0 119px 0 119px;
      width: 103px;
@@ -697,32 +698,32 @@ main .right_wrapper .intro_wrapper p {
  }
 
  /* 联系方式 */
- main .right_wrapper .contact .welcome {
+  .right-wrapper .contact .welcome {
     font-size:14px;
     font-family:MicrosoftYaHei;
     color:rgba(90,50,60,1);
     line-height:19px;
     padding: 12px 0;
  }
- main .right_wrapper .contact .contact_info {
+ .contact .contact_info {
      display: flex;
      justify-content: flex-start;
      align-items: center;
  }
- main .right_wrapper .contact .contact_info .QR_code {
+ .contact .contact_info .QR_code {
      width: 84px;
      height: 84px;
      margin-right: 14px;
 
  }
- main .right_wrapper .contact .contact_info .contact_way {
+ .contact .contact_info .contact_way {
     font-size:14px;
     font-family:MicrosoftYaHei;
     color:rgba(90,50,60,1);
     line-height: 1.4em;
  }
  /* 底部线条 */
- main .right_wrapper .line {
+  .right-wrapper .line {
     position: absolute;
     display: inline-block;
     width: 373px;
