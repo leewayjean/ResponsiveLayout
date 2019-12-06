@@ -315,23 +315,23 @@ header .user-info {
     border-top: 1px solid rgba(217, 210, 210, 1);
 }
 
- .message-boards .title {
+ .message-boards__title {
     display: flex;
     align-items: center;
     padding: 18px 0;
 }
 
- .message-boards .title .icon_1 {
+  .message-boards__title .icon_1 {
     width: 22px;
     height: 22px;
 }
 
- .message-boards .title .icon_2 {
+ .message-boards__title .icon_2 {
     width: 32px;
     height: 17px;
 }
 
- .message-boards .title .text {
+ .message-boards__title .text {
     font-size: 18px;
     font-family: Helvetica;
     color: rgba(90, 50, 60, 1);
@@ -342,7 +342,7 @@ header .user-info {
 
 /* 讨论问题 */
 
- .message-boards .problem {
+ .message-boards__problem {
     box-sizing: border-box;
     position: relative;
     width: 1056px;
@@ -354,19 +354,19 @@ header .user-info {
     padding: 30px 105px;
 }
 
- .problem .problem-wrapper {
+ .message-boards__problem .problem-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
- .problem .title-icon {
+ .message-boards__problem .title-icon {
     width: 32px;
     height: 32px;
     margin-right: 36px;
 }
 
- .problem .problem-content {
+ .message-boards__problem .problem-content {
     font-size: 14px;
     font-family: MicrosoftYaHei;
     color: rgba(90, 50, 60, 1);
@@ -375,13 +375,13 @@ header .user-info {
 }
 
 /* 连接条 */
- .problem .link-left {
+ .message-boards__problem .link-left {
     position: absolute;
     left: 80px;
     top: 85px;
 }
 
- .problem .link-right {
+ .message-boards__problem .link-right {
     position: absolute;
     right: 80px;
     top: 85px;
@@ -390,7 +390,7 @@ header .user-info {
 
 /* 评论区 */
 
- .message-boards .content {
+ .message-boards .message-boards__content {
     box-sizing: border-box;
     width: 1056px;
     height: 793px;
@@ -401,7 +401,7 @@ header .user-info {
     padding: 56px 36px;
 }
 
- .content .input-wrapper {
+ .content__input-wrapper {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -412,13 +412,13 @@ header .user-info {
     border: 2px solid rgba(180, 160, 160, 1);
 }
 
- .content .input-wrapper .icon {
+ .content__input-wrapper .icon {
     width: 19px;
     height: 15px;
     margin-right: 25px;
 }
 
- .input-wrapper .tips {
+ .content__input-wrapper .tips {
     font-size: 14px;
     font-family: MicrosoftYaHei;
     color: rgba(180, 160, 160, 1);
@@ -426,7 +426,7 @@ header .user-info {
     letter-spacing: 1px;
 }
 
- .input-wrapper .right span {
+ .content__input-wrapper .right span {
     font-size: 14px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
@@ -441,13 +441,13 @@ header .user-info {
     cursor: pointer;
 }
 
- .input-wrapper .right .register_btn {
+ .content__input-wrapper .right .register-btn {
     color: rgba(180, 160, 160, 1);
     border: 1px solid rgba(180, 160, 160, 1);
     letter-spacing: 1px;
 }
 
- .input-wrapper .right .login_btn {
+ .content__input-wrapper .right .login-btn {
     color: rgba(255, 255, 255, 1);
     background: rgba(198, 84, 76, 1);
 }
@@ -456,7 +456,7 @@ header .user-info {
 
 /* 评论分割线 */
 
- .content .split_line {
+ .content__split-line {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -464,42 +464,42 @@ header .user-info {
     margin-top: 54px;
 }
 
- .content .split_line .line_left {
+ .content__split-line .split-line__left {
     flex: 1;
     height: 1px;
     background: rgba(217, 210, 210, 1);
 }
 
- .content .split_line .title {
+ .content__split-line .split-line__title {
     margin: 0 18px;
     color: rgba(180, 160, 160, 1);
 }
 
- .content .split_line .line_right {
+ .content__split-line .split-line__right {
     flex: 1;
     height: 1px;
     background: rgba(217, 210, 210, 1);
 }
 
 /* 评论列表项 */
- .comment_item{
+ .comment-list__item{
     position: relative;
     display: flex;
     margin: 24px 0 55px 0;
 }
- .comment_item .order {
+ .comment-list__item .order {
     margin-right: 36px;
 }
- .comment_item .order img {
+ .comment-list__item .order img {
     width: 40px;
     height: 43px;
 }
- .comment_item .item_wrapper {
+ .comment-list__item .item_wrapper {
     flex: 1;
     padding: 0 0 55px 0;
     border-bottom: 1px solid #D9D2D2;
 }
- .comment_item .item_wrapper
+ .comment-list__item .item_wrapper
 .comment_content {
     font-size:14px;
     margin-top: 19px;
@@ -507,30 +507,30 @@ header .user-info {
     color:rgba(90,50,60,1);
 }
 
- .comment_item .item {
+ .comment-list__item .item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
- .comment_item .item .avatar {
+ .comment-list__item .item .avatar {
     width: 56px;
     height: 56px;
     border-radius: 50%;
     margin-right: 12px;
 }
- .comment_item .item  .username {
+ .comment-list__item .item  .username {
     font-size:18px;
     font-family:Helvetica;
     color:rgba(90,50,60,1);
 }
- .comment_item .item  p{
+ .comment-list__item .item  p{
     font-size:14px;
     font-family:MicrosoftYaHei;
     color:rgba(180,160,160,1);
 }
 /* 回复按钮 */
- .comment_item .reply_btn {
+ .comment-list__item .reply-btn {
     display: flex;
     align-items: center;
     position: absolute;
@@ -540,10 +540,11 @@ header .user-info {
     color:rgba(180,160,160,1);
     letter-spacing:1px;
 }
- .comment_item .reply_btn img {
+ .comment-list__item .reply-btn img {
     width: 15px;
     margin-right: 4px;
 }
+/* ==================================右侧栏开始========================================================================= */
 
 /* 侧边栏 */
 
