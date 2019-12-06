@@ -9,6 +9,11 @@ body {
     height: 200px;
     margin: 0 auto;
 }
+@media screen and (max-width:768px){
+    .wrapper {
+        width: 100%;
+    }
+}
 
 
 /* 头部顶栏 */
@@ -19,6 +24,10 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
+header .brand {
+    display: none;
+}
+
 
 /* 用户信息 */
 header .user-info {
@@ -54,6 +63,37 @@ header .user-info {
     border-color: rgba(169, 169, 169, 1) transparent transparent transparent;
     margin: 5px 0 0 4px;
 }
+@media screen and (max-width:768px){
+    header {
+        box-sizing: border-box;
+        width: 100%;
+        height: 66px;
+        padding: 0 27px 0 24px;
+        justify-content: space-between;
+    }
+    header .brand {
+        display: block;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+    }
+    header .brand .logo {
+        width: 44px;
+        height: 45px;
+        margin-right: 9px;
+    }
+    header .brand .name {
+        font-size:30px;
+        font-family:MicrosoftYaHei;
+        color:rgba(90,50,60,1);
+        line-height:40px;
+        letter-spacing:1px;
+    }
+    .user-info .avatar {
+        width: 42px;
+        height: 42px;
+    }
+}
 
 
 /* 中间内容区 */
@@ -63,9 +103,9 @@ header .user-info {
     justify-content: space-between;
 }
 
+
  .left-wrapper {
     width: 1056px;
-    height: 500px;
 }
 
  .right-wrapper {
@@ -81,6 +121,20 @@ header .user-info {
 }
 
 
+@media screen and (max-width:768px){
+    main {
+        width: 100%;
+    }
+    .left-wrapper{
+        width: 100%;
+    }
+    .right-wrapper{
+        display: none;
+    }
+}
+
+
+
 /* 左边区域banner */
 
 
@@ -94,6 +148,8 @@ header .user-info {
     margin: 0 auto;
     margin-bottom: 46px;
 }
+
+
 /* 涂鸦背景 */
 .banner__doodling {
     position: absolute;
@@ -102,6 +158,7 @@ header .user-info {
     width: 978px;
     height: 278px;
 }
+
 /* 金钱 */
 .banner__money {
     position: absolute;
@@ -110,6 +167,7 @@ header .user-info {
     left: 14px;
     bottom: 38px;
 }
+
 /* 房子 */
  .banner__house {
     position: absolute;
@@ -118,6 +176,7 @@ header .user-info {
     top: 0;
     left: 70px;
 }
+
 /* 标题 */
  .banner__title {
     width: 493px;
@@ -127,6 +186,7 @@ header .user-info {
     bottom: 36px;
     z-index: 999;
 }
+
 /* 火箭 */
   .banner__rocket {
     width: 44px;
@@ -135,6 +195,7 @@ header .user-info {
     top:22px ;
     left: 552px;
 }
+
 /* 主持人 */
  .banner__people {
     width: 232px;
@@ -144,6 +205,7 @@ header .user-info {
     top: 4px;
     z-index: 99;
 }
+
 /* 金字塔 */
  .banner__glod {
     width: 219px;
@@ -151,6 +213,64 @@ header .user-info {
     position: absolute;
     top: 78px;
     right: 10px;
+}
+@media screen and (max-width:768px){
+    .left-wrapper .banner {
+        width: 100%;
+        height: 240px;
+    }
+    .banner__doodling {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .banner__money {
+        position: absolute;
+        left: 0;
+        bottom: 16px;
+        width: 69px;
+        height: 85px;
+    }
+    .banner__house {
+        position: absolute;
+        width: 126px;
+        height: 91px;
+        top: 16px;
+        left: 16px;
+    }
+    .banner__title {
+        width: 467px;
+        height: 144px;
+        position: absolute;
+        left: 61px;
+        bottom: 3px;
+        z-index: 999;
+    }
+    .banner__rocket {
+        width: 36px;
+        height: 64px;
+        position: absolute;
+        top:30px ;
+        left: 470px;
+    }
+    .banner__people {
+        width: 181px;
+        height: 220px;
+        position: absolute;
+        right: 56px;
+        top: 20px;
+        z-index: 99;
+    }
+    .banner__glod {
+        width: 50px;
+        height: 80px;
+        position: absolute;
+        right: 0px;
+        bottom: 22px;
+        z-index: 99;
+    }
 }
 
 
@@ -162,7 +282,7 @@ header .user-info {
     margin-bottom: 18px;
 }
 
- .player__video {
+ .video__player {
     position: relative;
     box-sizing: border-box;
     width: 1056px;
@@ -170,8 +290,24 @@ header .user-info {
     border-radius: 11px;
     border: 10px solid rgba(198, 84, 76, 1);
 }
+@media screen and (max-width:768px){
+    .left-wrapper .video-wrapper {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 24px;
+    }
+    .video__player {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height:398px;
+        border-radius:11px;
+        border:10px solid rgba(198,84,76,1);
+    }
+
+}
 /* 社交分享 */
-.player__video .share {
+.video__player .share {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -185,7 +321,12 @@ header .user-info {
     border-radius:12px 12px 0px 0px;
     z-index: 99;
 }
-.player__video .share .share-btn {
+@media screen and (max-width:768px){
+    .video__player .share {
+        display: none;
+    }
+}
+.video__player .share .share-btn {
     font-size:14px;
     font-family:MicrosoftYaHei;
     color:rgba(240,225,225,1);
@@ -194,7 +335,7 @@ header .user-info {
     margin-left: 6px;
 }
 /* 播放暂停按钮 */
-.player__video .play-btn {
+.video__player .play-btn {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -205,12 +346,12 @@ header .user-info {
     cursor: pointer;
 }
 
-.player__video .play-btn img {
+.video__player .play-btn img {
     width: 100px;
     height: 100px;
     transition: transform .5s ease;
 }
-.player__video .play-btn img:hover {
+.video__player .play-btn img:hover {
     transform: scale(1.1);
 }
 
@@ -220,6 +361,11 @@ header .user-info {
  .left-wrapper .review {
     margin-top: 40px;
     border-top: 1px solid rgba(217, 210, 210, 1);
+}
+@media screen and (max-width:768px){
+    .left-wrapper .review {
+        padding: 0 24px;
+    }
 }
 
  .review .review-header {
@@ -260,6 +406,24 @@ header .user-info {
     letter-spacing: 1px;
     text-decoration: none;
 }
+@media screen and (max-width:768px){
+    .review-header .title .icon_1 {
+        width: 29px;
+        height: 29px;
+    }
+    .review-header .title .icon_2 {
+        width: 42px;
+        height: 22px;
+    }
+    .review-header .title .text {
+        font-size:24px;
+        line-height:29px;
+        margin:0 5px 0 12px;
+    }
+    .review-header .more {
+        font-size:20px;
+    }
+}
 
 
 /* 往期回顾内容 */
@@ -278,6 +442,17 @@ header .user-info {
     height: 252px;
     transition: transform 1s cubic-bezier(0.21, 0.94, 0.57, 1.49);
 }
+@media screen and (max-width:768px){
+    .review-list .review-list__item {
+        width: 50%;
+    }
+    .review-list .review-list__item:first-child{
+        margin-right: 19px;
+    }
+    .review-list .review-list__item:last-child{
+        display: none;
+    }
+}
 /* 动画 */
  .review-list__item:hover {
     box-shadow: 5px 6px 20px 0px #d9d2d2;
@@ -285,7 +460,7 @@ header .user-info {
 }
 
  .review-list__item img {
-    width: 336px;
+    width: 100%;
     height: 189px;
 }
 
@@ -314,6 +489,7 @@ header .user-info {
     margin-top: 40px;
     border-top: 1px solid rgba(217, 210, 210, 1);
 }
+
 
  .message-boards__title {
     display: flex;
@@ -374,6 +550,7 @@ header .user-info {
     letter-spacing: 1px;
 }
 
+
 /* 连接条 */
  .message-boards__problem .link-left {
     position: absolute;
@@ -401,6 +578,40 @@ header .user-info {
     padding: 56px 36px;
 }
 
+
+/* 媒体查询 */
+
+@media screen and (max-width:768px){
+    .left-wrapper .message-boards {
+        padding: 0 24px;
+    }
+    .message-boards__problem {
+        width: 100%;
+        height: 196px;
+        padding: 44px 24px;
+    }
+    .message-boards__problem .title-icon {
+        width: 39px;
+        height: 39px;
+        margin-right: 26px;
+    }
+    .message-boards__problem .problem-content {
+        font-size:24px;
+        line-height:36px;
+        letter-spacing:2px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    .message-boards .message-boards__content {
+        width: 100%;
+        height: 596px;
+    }
+}
+
+
+
  .content__input-wrapper {
     box-sizing: border-box;
     display: flex;
@@ -411,6 +622,7 @@ header .user-info {
     border-radius: 12px;
     border: 2px solid rgba(180, 160, 160, 1);
 }
+
 
  .content__input-wrapper .icon {
     width: 19px;
@@ -426,7 +638,12 @@ header .user-info {
     letter-spacing: 1px;
 }
 
- .content__input-wrapper .right span {
+
+.content__input-wrapper .right {
+    display: flex;
+    justify-content: flex-end;
+}
+ .content__input-wrapper .right .btn {
     font-size: 14px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
@@ -434,22 +651,59 @@ header .user-info {
     box-sizing: border-box;
     width: 72px;
     height: 30px;
-    padding: 6px 17px 6px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     letter-spacing: 1px;
     border: 1px solid rgba(180, 160, 160, 1);
     cursor: pointer;
 }
 
+
  .content__input-wrapper .right .register-btn {
     color: rgba(180, 160, 160, 1);
     border: 1px solid rgba(180, 160, 160, 1);
     letter-spacing: 1px;
+    margin-right: 18px;
 }
+
 
  .content__input-wrapper .right .login-btn {
     color: rgba(255, 255, 255, 1);
     background: rgba(198, 84, 76, 1);
+}
+
+@media screen and (max-width:768px){
+    .content__input-wrapper {
+        width: 100%;
+        padding: 30px 24px;
+     }
+    .content__input-wrapper .left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .content__input-wrapper .icon {
+        width: 30px;
+        height: 31px;
+        margin-right: 12px;
+    }
+    .content__input-wrapper .tips {
+        font-size:20px;
+        line-height:24px;
+        letter-spacing:2px;
+    }
+    .content__input-wrapper .right{
+        display: flex;
+    }
+    .content__input-wrapper .right .btn {
+        width: 108px;
+        height: 42px;
+    }
+    .content__input-wrapper .right .register-btn {
+        margin-right: 12px;
+    }
 }
 
 
@@ -545,8 +799,6 @@ header .user-info {
     margin-right: 4px;
 }
 /* ==================================右侧栏开始========================================================================= */
-
-/* 侧边栏 */
 
 
  .right-wrapper .title {
