@@ -156,13 +156,13 @@ header .user-info {
 
 /* 左边video */
 
- .left-wrapper .video-wrapper .video-wrapper__title {
+ .left-wrapper .video-wrapper .video__title {
     font-size: 24px;
     color: #5A323C;
     margin-bottom: 18px;
 }
 
- .video-wrapper__video {
+ .player__video {
     position: relative;
     box-sizing: border-box;
     width: 1056px;
@@ -171,7 +171,7 @@ header .user-info {
     border: 10px solid rgba(198, 84, 76, 1);
 }
 /* 社交分享 */
-.video-wrapper__video .share {
+.player__video .share {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -185,7 +185,7 @@ header .user-info {
     border-radius:12px 12px 0px 0px;
     z-index: 99;
 }
-.video-wrapper__video .share .share-btn {
+.player__video .share .share-btn {
     font-size:14px;
     font-family:MicrosoftYaHei;
     color:rgba(240,225,225,1);
@@ -194,7 +194,7 @@ header .user-info {
     margin-left: 6px;
 }
 /* 播放暂停按钮 */
-.video-wrapper__video .play-btn {
+.player__video .play-btn {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -205,12 +205,12 @@ header .user-info {
     cursor: pointer;
 }
 
-.video-wrapper__video .play-btn img {
+.player__video .play-btn img {
     width: 100px;
     height: 100px;
     transition: transform .5s ease;
 }
-.video-wrapper__video .play-btn img:hover {
+.player__video .play-btn img:hover {
     transform: scale(1.1);
 }
 
