@@ -401,7 +401,7 @@ header .user-info {
     padding: 56px 36px;
 }
 
- .content .input_wrapper {
+ .content .input-wrapper {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -412,13 +412,13 @@ header .user-info {
     border: 2px solid rgba(180, 160, 160, 1);
 }
 
- .content .input_wrapper .icon {
+ .content .input-wrapper .icon {
     width: 19px;
     height: 15px;
     margin-right: 25px;
 }
 
- .input_wrapper .tips {
+ .input-wrapper .tips {
     font-size: 14px;
     font-family: MicrosoftYaHei;
     color: rgba(180, 160, 160, 1);
@@ -426,7 +426,7 @@ header .user-info {
     letter-spacing: 1px;
 }
 
- .input_wrapper .right span {
+ .input-wrapper .right span {
     font-size: 14px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
@@ -441,13 +441,13 @@ header .user-info {
     cursor: pointer;
 }
 
- .input_wrapper .right .register_btn {
+ .input-wrapper .right .register_btn {
     color: rgba(180, 160, 160, 1);
     border: 1px solid rgba(180, 160, 160, 1);
     letter-spacing: 1px;
 }
 
- .input_wrapper .right .login_btn {
+ .input-wrapper .right .login_btn {
     color: rgba(255, 255, 255, 1);
     background: rgba(198, 84, 76, 1);
 }
