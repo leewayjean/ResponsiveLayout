@@ -2,11 +2,15 @@ body {
     background: #F8F6F3;
     font-family: MicrosoftYaHei;
 }
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
 
 /* 容器 */
 .wrapper {
-    width: 1440px;
-    height: 200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 @media screen and (max-width:768px){
@@ -63,6 +67,8 @@ header .user-info {
     border-color: rgba(169, 169, 169, 1) transparent transparent transparent;
     margin: 5px 0 0 4px;
 }
+
+/* ================================================================== */
 @media screen and (max-width:768px){
     header {
         box-sizing: border-box;
@@ -101,36 +107,38 @@ header .user-info {
 }
 
 
-/* 中间内容区 */
+/* =================中间内容区 =======================*/
 
  main {
-    display: flex;
-    justify-content: space-between;
+     width: 100%;
 }
 
 
- .left-wrapper {
-    width: 1056px;
+main .left-wrapper {
+    width:calc(100% - 384px);
+    margin-right: 24px;
+    float: left;
 }
 
- .right-wrapper {
-    position: relative;
-    top: 35px;
+main  .right-wrapper {
+    float: right;
+    position: sticky;
+    position:-webkit-sticky;
+    top: 20px;
     box-sizing: border-box;
     width: 360px;
-    height: 932px;
+    max-height: 937px;
     border-radius: 18px;
     padding: 0 24px;
     background: #fff;
     border: 2px solid rgba(180, 160, 160, 1);
+    margin-top: 30px;
 }
 
 
 @media screen and (max-width:768px){
-    main {
-        width: 100%;
-    }
-    .left-wrapper{
+    main .left-wrapper{
+        float: none;
         width: 100%;
     }
     .right-wrapper{
@@ -145,7 +153,7 @@ header .user-info {
 
  .left-wrapper .banner {
     position: relative;
-    width: 978px;
+    width: 100%;
     height: 278px;
     margin: 0 auto;
     display: flex;
@@ -160,7 +168,7 @@ header .user-info {
     position: absolute;
     left: 0;
     right: 0;
-    width: 978px;
+    width: 100%;
     height: 278px;
 }
 
@@ -290,7 +298,7 @@ header .user-info {
  .video__player {
     position: relative;
     box-sizing: border-box;
-    width: 1056px;
+    width: 100%;
     border-radius: 11px;
     border: 10px solid rgba(198, 84, 76, 1);
 }
@@ -629,7 +637,7 @@ header .user-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 336px;
+    width: 32%;
     transition: transform 1s cubic-bezier(0.21, 0.94, 0.57, 1.49);
 }
 
@@ -737,7 +745,7 @@ header .user-info {
     .message-boards__title .text {
         font-size:24px;
         line-height:29px;
-        margin:0 5px 0 12px;
+        padding:0 5px 0 12px;
     }
 }
 
@@ -747,13 +755,13 @@ header .user-info {
  .message-boards__problem {
     box-sizing: border-box;
     position: relative;
-    width: 1056px;
+    width: 100%;
     height: 102px;
     border-radius: 12px;
     border: 2px solid rgba(180, 160, 160, 1);
     background: #fff;
     margin-bottom: 17px;
-    padding: 30px 105px;
+    padding: 30px 105px 0 105px;
 }
 
  .message-boards__problem .problem-wrapper {
@@ -795,7 +803,7 @@ header .user-info {
 
  .message-boards .message-boards__content {
     box-sizing: border-box;
-    width: 1056px;
+    width: 100%;
     background: rgba(255, 255, 255, 1);
     border-radius: 23px;
     border: 2px solid rgba(180, 160, 160, 1);
@@ -850,7 +858,7 @@ header .user-info {
     display: flex;
     justify-content: space-between;
     padding: 36px;
-    width: 984px;
+    width: 100%px;
     height: 102px;
     border-radius: 12px;
     border: 2px solid rgba(180, 160, 160, 1);
@@ -1097,7 +1105,7 @@ header .user-info {
  .right-wrapper .intro_wrapper {
     display: flex;
     justify-content: space-between;
-    margin:39px 0 53px 0;
+    margin:39px 0 69px 0;
 }
  .right-wrapper .intro_wrapper img {
     margin-right: 24px;
@@ -1212,7 +1220,7 @@ header .user-info {
  }
   .right-wrapper .activity .act_btn {
      display: inline-block;
-     margin: 0 119px 0 119px;
+     margin:15px 119px;
      width: 103px;
      height: 36px;
      box-sizing: border-box;
@@ -1226,6 +1234,10 @@ header .user-info {
  }
 
  /* 联系方式 */
+ .right-wrapper .contact  {
+     padding-left: 38px;
+     margin-bottom: 24px;
+ }
   .right-wrapper .contact .welcome {
     font-size:14px;
     font-family:MicrosoftYaHei;
