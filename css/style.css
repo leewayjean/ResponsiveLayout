@@ -379,8 +379,14 @@ main  .right-wrapper {
     .left-wrapper .intro {
         display: block;
         padding: 0 24px 0;
+
     }
     .left-wrapper .intro .header{
+        border-top: 1px solid rgba(217, 210, 210, 1);
+        margin-top: 42px;     
+
+    }
+    .left-wrapper .intro .header .header__title {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -395,7 +401,6 @@ main  .right-wrapper {
         line-height:19px;
         letter-spacing:2px;
         margin: 41px auto 55px;
-
     }
     .left-wrapper .intro .intro-list {
         display: flex;
@@ -490,7 +495,7 @@ main  .right-wrapper {
             border:2px solid rgba(90,50,60,1)
         }
         .left-wrapper .votes .question{
-            margin: 0 7px;
+            margin: 0 7px 19px;
             font-size:28px;
             font-family:Helvetica;
             color:rgba(90,50,60,1);
@@ -1080,8 +1085,11 @@ main  .right-wrapper {
     .comment-list__item .order {
         margin-right: 0;
     }
+    .comment-list__item .reply-btn {
+        font-size: 20px;
+    }
 }
-/* ==================================右侧栏开始========================================================================= */
+/* ==================================右侧栏开始========================================= */
 
 
  .right-wrapper .title {
