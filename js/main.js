@@ -44,7 +44,6 @@ for (let i = 0; i < reviewList.length; i++) {
 
 // 播放、暂停功能
 playBtn.addEventListener("click", () => {
-    console.log(2)
     videoPlayer.play();
     playBtn.style.display = "none";
 })
@@ -60,13 +59,11 @@ videoPlayer.addEventListener("click", () => {
 // 回到顶部功能
 // 监听屏幕滚动
 let screenHeight = window.screen.availHeight
-console.log(screenHeight);
 
 window.onscroll = () => {
     //为了保证兼容性，这里取两个值，哪个有值取哪一个
     //scrollTop就是触发滚轮事件时滚轮的高度
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    console.log("滚动距离" + scrollTop);
     if(scrollTop > screenHeight){
         backTop.style.display = "block";
     }else {
@@ -87,4 +84,20 @@ backTop.onclick =  () => {
             cancelAnimationFrame(timer);
         }
     });
+}
+
+// 交易人物介绍列表
+let introList = document.querySelector(".intro-list");
+let introArray = introList.querySelectorAll(".intro-list__item");
+let selectedIcon = introList.querySelectorAll(".icon");
+
+
+
+for(let i = 0; i < introArray.length; i++){
+    introArray[i].addEventListener("click",() => {
+        for(let j = 0; j < selectedIcon.length;j++){
+            selectedIcon[j].classList.remove("selected");
+        }
+        selectedIcon[i].classList.add("selected");
+    })
 }
